@@ -1,0 +1,1 @@
+export { nameBoard } from "./nameBoard.js"

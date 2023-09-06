@@ -1,0 +1,1 @@
+export const titlesOfBoards = ['TODO', 'IN PROGRESS', 'DONE']
