@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-padding: 60px;
+    /* rem */
+    font-size: 14px; 
+    /* font-family: 'Prompt', sans-serif;
+font-family: 'Rubik Iso', cursive; */
+font-family: 'Dancing Script', cursive;
+
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+ul,
+ol,
+dl {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
