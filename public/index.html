@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>control command</title>
+    <script type='module' src='../src/scripts/index.js'></script>
+    <link rel='stylesheet' href='../src/styles/_wrapper.scss'>
+</head>
+
+<body>
+    <div class='wrapper' id='root'>
+        <header class='header__main'>
+            <img class='header__main-logo' src='../src/assets/logo.svg' alt=''>
+            <div class='header__main-timer'></div>
+        </header>
+        <section class='boards'>
+            <div class='boards__item'>
+                <div class='boards__item-header'>
+                    <h2 class='boards__item-header-title'></h2>
+                    <span class='boards__item-header-counter'></span>
+                </div>
+                <div class='boards__item-body'></div>
+                <button class="boards__item-button">Add todo</button>
+            </div>
+            <div class='boards__item'>
+                <div class='boards__item-header'>
+                    <h2 class='boards__item-header-title'></h2>
+                    <span class='boards__item-header-counter'></span>
+                </div>
+                <div class='boards__item-body'></div>
+            </div>
+            <div class='boards__item'>
+                <div class='boards__item-header'>
+                    <h2 class='boards__item-header-title'></h2>
+                    <span class='boards__item-header-counter'></span>
+                </div>
+                <div class='boards__item-body'></div>
+                <button class="boards__item-button">Delete all</button>
+            </div>
+        </section>
+    </div>
+    <template class='task'>
+        <div class='task__wrapper'>
+            <div class='task__title'></div>
+            <div class='task__desc'></div>
+            <div class='task__user'></div>
+            <button class='task__functionality-main'></button>
+            <button class='task__functionality-additional'></button>
+            <time class='task__date'></time>
+        </div>
+    </template>
+    </div>
+</body>
+
+</html>
