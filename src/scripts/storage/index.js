@@ -1,0 +1,1 @@
+export { getDataLocalStorage, setDataLocalStorage } from "./storage.js"

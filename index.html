@@ -7,13 +7,13 @@
     <title>control command</title>
     <script type='module' src='../src/scripts/index.js'></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@700&family=Rubik+Iso&display=swap" rel="stylesheet"> -->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../src/styles/css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/styles/css/main.min.css">
 
 </head>
 
@@ -62,12 +62,15 @@
     <template class='task__form'>
         <form class="task__form-body" spellcheck="true" method="get">
             <label for="title"></label>
-            <input class="task__form-body-title" id="title"  type="text" autofocus required>
+            <input class="task__form-body-title" id="title" type="text" autofocus required>
             <label for="description"></label>
-            <textarea class="task__form-body-description" id="description" maxlength="500" name="" id=""  cols="30" rows="10"></textarea>
-        <button class="task__form-body-reset" type="reset"></button>
-        <button class="task__form-body-submit" type="submit"></button>
-    </form>
+            <input class="task__form-body-user" list="users" type="text">
+            <datalist class="task__form-body-datalist" id="users"></datalist>
+            <textarea class="task__form-body-description" id="description" maxlength="500" name="" id="" cols="30"
+                rows="10"></textarea>
+            <button class="task__form-body-reset" type="reset"></button>
+            <button class="task__form-body-submit" type="submit"></button>
+        </form>
     </template>
     </div>
 </body>
