@@ -30,7 +30,7 @@
                     <span class='boards__item-header-counter'></span>
                 </div>
                 <div class='boards__item-body'></div>
-                <button class="boards__item-button">Add todo</button>
+                <button class="boards__item-button-add" type="button">Add todo</button>
             </div>
             <div class='boards__item'>
                 <div class='boards__item-header'>
@@ -45,19 +45,29 @@
                     <span class='boards__item-header-counter'></span>
                 </div>
                 <div class='boards__item-body'></div>
-                <button class="boards__item-button">Delete all</button>
+                <button class="boards__item-button-delete" type="button">Delete all</button>
             </div>
         </section>
     </div>
     <template class='task'>
-        <div class='task__wrapper'>
-            <div class='task__title'></div>
-            <div class='task__desc'></div>
-            <div class='task__user'></div>
-            <button class='task__functionality-main'></button>
-            <button class='task__functionality-additional'></button>
-            <time class='task__date'></time>
+        <div class='task__body'>
+            <div class='task__body-title'></div>
+            <div class='task__body-description'></div>
+            <div class='task__body-user'></div>
+            <button class='task__body-functionality-main'></button>
+            <button class='task__body-functionality-additional'></button>
+            <time class='task__body-date'></time>
         </div>
+    </template>
+    <template class='task__form'>
+        <form class="task__form-body" spellcheck="true" method="get">
+            <label for="title"></label>
+            <input class="task__form-body-title" id="title"  type="text" autofocus required>
+            <label for="description"></label>
+            <textarea class="task__form-body-description" id="description" maxlength="500" name="" id=""  cols="30" rows="10"></textarea>
+        <button class="task__form-body-reset" type="reset"></button>
+        <button class="task__form-body-submit" type="submit"></button>
+    </form>
     </template>
     </div>
 </body>

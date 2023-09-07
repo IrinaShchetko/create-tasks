@@ -1,2 +1,3 @@
-import { nameBoard } from './components/index.js'
-nameBoard()
+import { initApp } from './app.js'
+
+initApp()
