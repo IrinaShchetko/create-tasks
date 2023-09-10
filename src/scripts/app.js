@@ -1,6 +1,6 @@
 import { nameBoard } from './components/index.js'
 import { handlerOpenModalForAddTask, handlerDeleteCurrentTask } from '../scripts/handlers/index.js'
-import { renderTasks } from './logic/index.js'
+import { renderTasks, dragAndDrop } from './logic/index.js'
 
 
 export function initApp() {
@@ -12,7 +12,7 @@ export function initApp() {
     deleteBtns.forEach (item => {
         item.addEventListener('click', handlerDeleteCurrentTask)
     })
-    
+    dragAndDrop()
     // const overlay = document.querySelector('.modal__overlay')
     // overlay.addEventListener('click', handlerCloseModal)
     

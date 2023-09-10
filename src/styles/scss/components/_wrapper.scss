@@ -13,10 +13,13 @@
 }
 
 .header__main-logo {
-  max-width: 5rem;
-  max-height: 5rem;
+  width: 8rem;
+  height: 7rem;
 }
-
+.header__main-title{
+  color:$text-color;
+  font-size: 3rem;
+}
 .header__main-timer {
   background-color: brown;
 }
@@ -59,7 +62,12 @@
   padding: 1rem 3rem;
   border: 1px solid $secondary-color;
 }
-
+.hidden {
+  display: none;
+}
+.hovered {
+  background-color: $styling-color;
+}
 /* .task {
 }
 .task__wrapper {

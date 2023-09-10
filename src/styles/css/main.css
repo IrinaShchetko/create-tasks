@@ -52,8 +52,13 @@ button {
 }
 
 .header__main-logo {
-  max-width: 5rem;
-  max-height: 5rem;
+  width: 8rem;
+  height: 7rem;
+}
+
+.header__main-title {
+  color: rgb(147, 22, 22);
+  font-size: 3rem;
 }
 
 .header__main-timer {
@@ -100,6 +105,14 @@ button {
   margin: auto;
   padding: 1rem 3rem;
   border: 1px solid rgb(6, 6, 6);
+}
+
+.hidden {
+  display: none;
+}
+
+.hovered {
+  background-color: rgb(147, 22, 22);
 }
 
 /* .task {

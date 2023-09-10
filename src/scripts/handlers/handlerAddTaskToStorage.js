@@ -12,7 +12,6 @@ export function handlerAddTaskToStorage() {
         description: desc,
         user: selectedUser.value
     }
-    console.log(newTask)
     allTasks.push(newTask)
     setDataLocalStorage('tasks', allTasks)
 }

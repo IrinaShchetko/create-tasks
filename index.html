@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>control command</title>
+    <title>create tasks</title>
     <script type='module' src='../src/scripts/index.js'></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,8 @@
 <body>
     <div class='wrapper' id='root'>
         <header class='header__main'>
-            <img class='header__main-logo' src='../src/assets/logo.svg' alt=''>
+            <img class='header__main-logo' src='./src/assets/logo-main.svg' alt=''>
+            <h1 class="header__main-title">CREATE TASKS</h1>
             <div class='header__main-timer'></div>
         </header>
         <section class='boards'>
@@ -50,7 +51,7 @@
         </section>
     </div>
     <template class='task'>
-        <div class='task__body'>
+        <div class='task__body' draggable="true">
             <div class='task__title'></div>
             <div class='task__description'></div>
             <div class='task__user'></div>
