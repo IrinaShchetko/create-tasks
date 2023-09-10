@@ -8,6 +8,6 @@ export function createTask(item) {
     task.querySelector(".task__user").textContent = item.user
     task.querySelector(".task__functionality-main").textContent = "EDIT"
     task.querySelector(".task__functionality-additional").textContent = "DELETE"
-    task.querySelector(".task__date").textContent = "09.09.23"
+    task.querySelector(".task__date").textContent = new Date().toLocaleDateString()
     return task
 }

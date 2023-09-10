@@ -1,1 +1,1 @@
-export const users = ['sdd', 'iogijtg', 'ccc', 'rerthkrgh', 'dbdb']
+export const users = ['Ирина', 'Ян']
