@@ -1,7 +1,6 @@
-import { nameBoard } from './components/index.js'
+import { nameBoard, currentTime } from './components/index.js'
 import { handlerOpenModalForAddTask, handlerDeleteCurrentTask } from '../scripts/handlers/index.js'
 import { renderTasks, dragAndDrop } from './logic/index.js'
-
 
 export function initApp() {
     nameBoard()
@@ -13,6 +12,7 @@ export function initApp() {
         item.addEventListener('click', handlerDeleteCurrentTask)
     })
     dragAndDrop()
+    currentTime()
     // const overlay = document.querySelector('.modal__overlay')
     // overlay.addEventListener('click', handlerCloseModal)
     

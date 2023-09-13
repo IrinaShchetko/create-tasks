@@ -20,10 +20,10 @@
   color:$text-color;
   font-size: 3rem;
 }
-.header__main-timer {
-  background-color: brown;
+.header__main-clock {
+  color: $text-color;
+max-width: 7rem;
 }
-
 .boards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

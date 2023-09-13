@@ -2,31 +2,31 @@ export function dragAndDrop() {
     const boards = document.querySelectorAll('.boards__item')
     const tasks = document.querySelectorAll('.task__body')
 
-    const dragstart = function () {
+    function dragStart () {
         setTimeout(() => {
             this.classList.add('hidden')
         }, 0)
     }
-    const dragEnd = function () {
+    function dragEnd () {
         setTimeout(() => {
             this.classList.remove('hidden')
         }, 0)
     }
     tasks.forEach(item => {
-        item.addEventListener('dragstart', dragstart)
+        item.addEventListener('dragstart', dragStart)
         item.addEventListener('dragend', dragEnd)
 
     })
-    const dragOver = function (event) {
+    function dragOver (event) {
         event.preventDefault()
     }
-    const dragEnter = function () {
+    function dragEnter () {
         this.classList.add('hovered')
     }
-    const dragLeave = function () {
+    function dragLeave () {
         this.classList.remove('hovered')
     }
-    const dragDrop = function () {
+    function dragDrop () {
         this.classList.remove('hovered')
         const draggedTask = document.querySelector('.task__body.dragging')
         if (draggedTask) {
